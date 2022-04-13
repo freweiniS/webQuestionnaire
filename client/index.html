@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src = "https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="290214109041-832029art180mtd90l426hbug1ufh97i.apps.googleusercontent.com">
+
+    <title>questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class ="grid">
+    <h1>questionnaire</h1>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="row">
+      <button id ='sendMail' return false">Send Questionnaire</button>
+      <button   type="button"  id = 'reply'>View Responses</button>
+      <div>
+      <a class = 'tablink' href="http://localhost:8080/questions.html">Questionnaire</a>
+      <a  class = 'tablink' id="myAnchor" href="#" onclick="signOut();">Sign out</a>
+    </div>
+  </div>
+  </div>
+  <div id = 'answers'>
+  </div>
+  <script src = 'index.js' type="text/javascript"></script>
+</body>
+</html>
